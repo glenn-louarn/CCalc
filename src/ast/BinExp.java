@@ -20,7 +20,7 @@ public class BinExp extends Exp {
 
     @Override
     public String gen(int depth) {
-        return "(" + e1.gen(0) + " " + op.gen(0) + " " + e2.gen(0) + ")";
+        return "(" + e1.gen(0) + " " + op.gen(this.op) + " " + e2.gen(0) + ")";
     }
 
     @Override
@@ -43,9 +43,5 @@ public class BinExp extends Exp {
             default:
                 throw new SyntaxError("Unrecognized operand");
         }
-    }
-
-    public enum OP {
-        PLUS, MINUS, TIMES, DIVIDE, EQUAL, LESS
     }
 }

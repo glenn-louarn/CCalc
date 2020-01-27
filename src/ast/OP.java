@@ -1,25 +1,24 @@
 package ast;
 
-import java.sql.Time;
-import java.sql.Timestamp;
-
-public enum OP{
+public enum OP {
     PLUS, EQUAL,MINUS, TIMES, DIVIDE, LESS;
 
     public String gen(OP op) {
         switch (op){
-            case(OP.PLUS):
+            case PLUS:
                 return "+";
-            case(EQUAL):
+            case EQUAL:
                 return  "=";
-            case(MINUS):
+            case MINUS:
                 return "-";
-            case(TIMES):
+            case TIMES:
                 return "*";
-            case(DIVIDE):
+            case DIVIDE:
                 return "/";
-            case(LESS):
+            case LESS:
                 return "<";
+            default:
+                throw new Error("OP NOT FOUND");
         }
     }
 

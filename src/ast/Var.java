@@ -23,4 +23,9 @@ public class Var extends Exp {
     public String toString() {
         return "Var(" + this.string + ")";
     }
+
+    @Override
+    public String gen(int depth) {
+        return null;
+    }
 }

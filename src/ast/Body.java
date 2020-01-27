@@ -24,4 +24,9 @@ public class Body extends AST {
     public String toString() {
         return "Body : "+ this.exp;
     }
+
+    @Override
+    public String gen(int depth) {
+        return null;
+    }
 }

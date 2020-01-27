@@ -19,6 +19,11 @@ public class CondExp extends Exp {
     }
 
     @Override
+    public String gen(int depth) {
+        return null;
+    }
+
+    @Override
     public int eval(State<Integer> state) {
         return e1.eval(state) != 0 ? e2.eval(state) : e3.eval(state);
     }

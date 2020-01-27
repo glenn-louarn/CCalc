@@ -15,6 +15,11 @@ public class UnExp extends Exp {
     }
 
     @Override
+    public String gen(int depth) {
+        return null;
+    }
+
+    @Override
     public int eval(State<Integer> state) {
         return -this.e.eval(state);
     }

@@ -19,4 +19,9 @@ public class VarDef extends AST{
     public String toString() {
         return "VarDef("+ this.var_id + " : " + this.e + ")";
     }
+
+    @Override
+    public String gen(int depth) {
+        return null;
+    }
 }

@@ -11,6 +11,7 @@ import parser.generated.CalcLexer;
 import parser.generated.CalcParser;
 
 import java.io.FileInputStream;
+import java.io.FileWriter;
 import java.io.IOException;
 import java.io.InputStream;
 
@@ -32,7 +33,29 @@ public class Calc {
             default:
                 throw new java.lang.IllegalArgumentException();
         }
+        compile(is, "");
         System.out.println("EVAL : "+interpret(is));
+    }
+
+    public static void compile(InputStream is, String inputFile) throws IOException {
+        AST ast = analyze(is);
+        String code = ast.gen(0);
+        if (inputFile!= null) {
+            write(code, inputFile);
+        } else {
+            System.out.println(code);
+        }
+    }
+
+    static String write(String code, String filename) throws IOException {
+        String CFilename = filename.replaceFirst("\\.calc", ".c");
+        boolean verbose = true;
+        if(verbose) System.out.println("Writing C code to : "+CFilename);
+        FileWriter out = new FileWriter(CFilename);
+        out.write(code);
+        out.flush();
+        out.close();
+        return CFilename;
     }
 
     public static AST analyze(InputStream is) throws IOException {

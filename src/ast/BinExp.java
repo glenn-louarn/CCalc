@@ -19,6 +19,11 @@ public class BinExp extends Exp {
     }
 
     @Override
+    public String gen(int depth) {
+        return null;
+    }
+
+    @Override
     public int eval(State<Integer> state) {
         int val1 = this.e1.eval(state);
         int val2 = this.e2.eval(state);

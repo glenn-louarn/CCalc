@@ -16,7 +16,7 @@ public class UnExp extends Exp {
 
     @Override
     public String gen(int depth) {
-        return null;
+        return "(-"+e.gen(depth)+")";
     }
 
     @Override

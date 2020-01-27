@@ -20,7 +20,7 @@ public class CondExp extends Exp {
 
     @Override
     public String gen(int depth) {
-        return null;
+        return "(" + e1.gen(0) + "? " + e2.gen(0) + ": " + e3.gen(0) + ")";
     }
 
     @Override

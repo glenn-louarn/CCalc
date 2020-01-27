@@ -1,6 +1,7 @@
 package ast;
 
 import eval.State;
+
 import java.util.List;
 
 public class Body extends AST {
@@ -22,11 +23,19 @@ public class Body extends AST {
 
     @Override
     public String toString() {
-        return "Body : "+ this.exp;
+        return "Body : " + this.exp;
     }
 
     @Override
     public String gen(int depth) {
-        return null;
+        String st = "";
+        for (VarDef vd : defs) {
+            st += vd.gen(depth);
+        }
+        return
+                "int main () {\n" +
+                        st +
+                        exp.gen(depth) +
+                        "}\n";
     }
 }

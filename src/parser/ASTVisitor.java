@@ -13,7 +13,7 @@ public class ASTVisitor extends CalcBaseVisitor<AST> {
         //TODO deal with function definition
         CalcParser.BodyContext bctx = ctx.body();
         Body body = (Body)visit(bctx);
-        return new Program(new ArrayList<>(), body);
+        return new Program(body);
     }
     @Override
     public AST visitBody(CalcParser.BodyContext ctx) {

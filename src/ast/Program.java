@@ -6,16 +6,14 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Program extends AST {
-    List<FunDef> defs;
     Body body;
 
-    public Program(List<FunDef> defs, Body body) {
-        this.defs = defs;
+    public Program(Body body) {
         this.body = body;
     }
 
     public static String genMain(String gen) {
-        return "";
+        return gen;
     }
 
     @Override
@@ -26,6 +24,7 @@ public class Program extends AST {
     public int eval(State<Integer> state){
         return body.eval(state);
     }
+
     @Override
     public String gen(int depth) {
         return "#include <stdio.h>\n" +

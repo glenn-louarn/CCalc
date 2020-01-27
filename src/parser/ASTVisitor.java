@@ -7,14 +7,14 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class ASTVisitor extends CalcBaseVisitor<AST> {
-
+/**
     @Override
     public AST visitProgram(CalcParser.ProgramContext ctx){
         //TODO deal with function definition
         CalcParser.BodyContext bctx = ctx.body();
         Body body = (Body)visit(bctx);
         return new Program(body);
-    }
+    }**/
     @Override
     public AST visitBody(CalcParser.BodyContext ctx) {
         CalcParser.ExpressionContext ectx = ctx.expression();

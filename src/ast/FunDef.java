@@ -5,4 +5,9 @@ public class FunDef extends AST {
     public String toString() {
         return null;
     }
+
+    @Override
+    public String gen(int depth) {
+        return null;
+    }
 }

@@ -54,6 +54,7 @@ public class Calc {
 
     public static void compile(InputStream is, String inputFile) throws IOException {
         AST ast = analyze(is);
+        System.out.println("AST : "+ast.toString());
         String code = Program.genMain(ast.gen(0)); // TODO: update for blue and red tracks
         if (inputFile != null)
             write(code, inputFile);

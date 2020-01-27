@@ -29,8 +29,8 @@ public abstract class Test {
 	// assumes the path environment variable has been updated so that bash (and gcc) is in the path	
 	static final String SHELL = "bash";
 	static final String EXT = ".out"; // EXT = ".exe"
-	static final String CC = "gcc -Werror -Weverything"; // clang on macOS
-	// static final String CC = "gcc -Werror" // gcc on Windows and Linux
+	//static final String CC = "gcc -Werror -Weverything"; // clang on macOS
+	static final String CC = "gcc -Werror"; // gcc on Windows and Linux
 	// static final String CC = "gcc-mp-8 -Werror"; // genuine gcc on macOS (if installed)
 	/**
 	 * Executes a test.

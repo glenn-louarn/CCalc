@@ -33,9 +33,7 @@ public class Body extends AST {
             st += vd.gen(depth);
         }
         return
-                "int main () {\n" +
-                        st +
-                        exp.gen(depth) +
-                        "}\n";
+            st +
+            exp.gen(depth);
     }
 }

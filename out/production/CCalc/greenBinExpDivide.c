@@ -1,4 +1,4 @@
 #include <stdio.h>
 int main () {
- return printf("%i\n",(1 == 2));
+ return printf("%i\n",(5 / 2));
 }

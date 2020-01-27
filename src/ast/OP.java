@@ -8,7 +8,7 @@ public enum OP {
             case PLUS:
                 return "+";
             case EQUAL:
-                return  "=";
+                return  "==";
             case MINUS:
                 return "-";
             case TIMES:

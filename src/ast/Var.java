@@ -26,6 +26,6 @@ public class Var extends Exp {
 
     @Override
     public String gen(int depth) {
-        return null;
+        return string;
     }
 }

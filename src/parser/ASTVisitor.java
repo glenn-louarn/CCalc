@@ -41,7 +41,7 @@ public class ASTVisitor extends CalcBaseVisitor<AST> {
         if (ctx.getChild(3).getText().length() == 1) {
             return new UnExp((Exp) visit(expCtxs));
         } else {
-            return new BinExp(BinExp.OP.MINUS, (Exp) visit(expCtxs), (Exp) visit(ctx.getChild(3).getChild(0)));
+            return new BinExp(OP.MINUS, (Exp) visit(expCtxs), (Exp) visit(ctx.getChild(3).getChild(0)));
         }
     }
 
@@ -51,25 +51,25 @@ public class ASTVisitor extends CalcBaseVisitor<AST> {
         Exp exp1 = (Exp) visit(expCtxs.get(0));
         Exp exp2 = (Exp) visit(expCtxs.get(1));
         String opString = ctx.getChild(1).getText();
-        BinExp.OP op;
+        OP op;
         switch(opString) {
             case "+":
-                op = BinExp.OP.PLUS;
+                op = OP.PLUS;
                 break;
             case "-":
-                op = BinExp.OP.MINUS;
+                op = OP.MINUS;
                 break;
             case "*":
-                op = BinExp.OP.TIMES;
+                op = OP.TIMES;
                 break;
             case "/":
-                op = BinExp.OP.DIVIDE;
+                op = OP.DIVIDE;
                 break;
             case "==":
-                op = BinExp.OP.EQUAL;
+                op = OP.EQUAL;
                 break;
             case "<":
-                op = BinExp.OP.LESS;
+                op = OP.LESS;
                 break;
             default:
                 return null;

@@ -22,6 +22,6 @@ public class VarDef extends AST{
 
     @Override
     public String gen(int depth) {
-        return null;
+        return var_id +" = " + this.e.gen(0);
     }
 }

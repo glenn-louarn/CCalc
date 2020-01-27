@@ -16,7 +16,7 @@ public class IntLit extends Exp {
 
     @Override
     public String gen(int depth) {
-        return null;
+        return "" + this.val;
     }
 
     @Override

@@ -2,9 +2,6 @@ package ast;
 
 import eval.State;
 
-import java.util.ArrayList;
-import java.util.List;
-
 public class Program extends AST {
     Body body;
 

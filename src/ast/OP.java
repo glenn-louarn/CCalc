@@ -18,7 +18,7 @@ public enum OP {
             case LESS:
                 return "<";
             default:
-                throw new Error("OP NOT FOUND");
+                throw new SyntaxError("Unrecognized operand");
         }
     }
 

@@ -1,0 +1,3 @@
+even(n) n==0 ? 1 : odd(n-1)
+odd(n) n==0 ? 0 : even(n-1)
+even(4)

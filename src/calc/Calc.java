@@ -2,6 +2,7 @@ package calc;
 
 import ast.AST;
 import ast.Exp;
+import ast.Program;
 import eval.State;
 import org.antlr.v4.runtime.ANTLRInputStream;
 import org.antlr.v4.runtime.CommonTokenStream;
@@ -16,41 +17,54 @@ import java.io.IOException;
 import java.io.InputStream;
 
 public class Calc {
+    public static boolean verbose = false;
+    public static boolean interpret = false;
+
     /**
-     * @param args - args[0] is the name of the file to analyze,
+     * @param args - the filename of the file to analyze,
      *                otherwise the program is entered at the console.
+     *             - "-v" indicates verbose mode.
+     *             - "-i" indicates interpretation rather than compilation.
      */
     public static void main(String[] args) throws IOException {
-        InputStream is;
+        InputStream is = null;
+        String filename = null;
 
-        switch (args.length) {
-            case 0:
-                is = System.in;
-                break;
-            case 1:
-                is = new FileInputStream(args[0]);
-                break;
-            default:
-                throw new java.lang.IllegalArgumentException();
+        for (String arg: args) {
+            if (arg.charAt(0) != '-') {
+                filename = arg;
+                is = new FileInputStream(arg);
+            } else switch (arg) {
+                case "-v":
+                    verbose = true;
+                    break;
+                case "-i":
+                    interpret = true;
+                    break;
+                default:
+                    throw new java.lang.IllegalArgumentException();
+            }
         }
-        compile(is, "");
-        System.out.println("EVAL : "+interpret(is));
+        if (is == null) is = System.in;
+        if (interpret)
+            System.out.println("===> " + interpret(is));
+        else
+            compile(is, filename);
     }
 
     public static void compile(InputStream is, String inputFile) throws IOException {
         AST ast = analyze(is);
-        String code = ast.gen(0);
-        if (inputFile!= null) {
+        String code = Program.genMain(ast.gen(0)); // TODO: update for blue and red tracks
+        if (inputFile != null)
             write(code, inputFile);
-        } else {
+        else
             System.out.println(code);
-        }
     }
-
+    // write code to .c file associated to .calc file passed as argument,
+    // returning .c file relative filename
     static String write(String code, String filename) throws IOException {
-        String CFilename = filename.replaceFirst("\\.calc", ".c");
-        boolean verbose = true;
-        if(verbose) System.out.println("Writing C code to : "+CFilename);
+        String CFilename = filename.replaceFirst("\\.calc\\z", ".c");
+        if (verbose) System.out.println("writing C code to " + CFilename);
         FileWriter out = new FileWriter(CFilename);
         out.write(code);
         out.flush();
@@ -65,16 +79,22 @@ public class Calc {
         CalcParser parser = new CalcParser(tokens);
 
         ParseTree tree = parser.program();
-        System.out.println("ANTLR Syntax tree: " + tree.toStringTree(parser));
+        if (verbose)
+            System.out.println("ANTLR Syntax Tree: " + tree.toStringTree(parser));
+        // TODO : implement error detection
+//        if (ErrorFlag.getFlag()) throw new SyntaxError("Erroneous Syntax Tree");
+//        else {
         ASTVisitor visitor = new ASTVisitor();
-        Exp exp = (Exp) visitor.visit(tree);
-        System.out.println("AST : " + exp);
-        return exp;
+        AST ast = visitor.visit(tree);
+        if (verbose)
+            System.out.println("AST: " + ast);
+        return ast;
+//        }
     }
 
     public static int interpret(InputStream is) throws IOException {
-        Exp exp = (Exp) analyze(is);
-        int eval = exp.eval(new State<>());
-        return eval;
+        AST ast = analyze(is);
+        return ((Exp) ast).eval(new State<>());
     }
 }
+

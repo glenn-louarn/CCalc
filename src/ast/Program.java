@@ -14,6 +14,10 @@ public class Program extends AST {
         this.body = body;
     }
 
+    public static String genMain(String gen) {
+        return "";
+    }
+
     @Override
     public String toString() {
         return null;

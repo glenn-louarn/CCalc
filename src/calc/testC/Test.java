@@ -1,4 +1,4 @@
-package testC;
+package calc.testC;
 
 import java.io.File;
 import java.io.FileInputStream;

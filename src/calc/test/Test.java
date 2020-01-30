@@ -120,7 +120,7 @@ public abstract class Test {
 //		cmd[1] = "-c";
 //		cmd[2] = "/usr/bin/gcc " + CFilename;
         String outputFileName = cFileName.replaceFirst("\\.c\\z", EXT);
-        String[] cmd = {SHELL, "-c", CC + " -o " + outputFileName + " " + cFileName};
+        String[] cmd = {SHELL, "-c", CC + " -o " + "-pedantic-errors" + outputFileName + " " + cFileName};
         Runtime.getRuntime().exec(cmd).waitFor();
         return outputFileName;
     }

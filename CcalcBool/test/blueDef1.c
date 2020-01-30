@@ -1,0 +1,4 @@
+#include <stdio.h>
+int main () {
+ return printf("%i\n",if0);
+}

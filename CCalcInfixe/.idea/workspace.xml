@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="a30063a1-4120-443e-be18-a5e5f42fd43b" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Enum" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1X6qz54yiLfSZeHBmpLstUMmjER" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/parser" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="parser" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.TestGreenPlus">
+    <configuration name="TestBlue" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="calc.test.TestBlue" />
+      <module name="CCalcInfixe" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="calc.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestError" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="calc.test.TestError" />
+      <module name="CCalcInfixe" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="calc.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestGreen" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="calc.test.TestGreen" />
+      <module name="CCalcInfixe" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="calc.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestGreenError" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="calc.test.TestGreenError" />
+      <module name="CCalcInfixe" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="calc.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestGreenPlus" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="calc.test.TestGreenPlus" />
+      <module name="CCalcInfixe" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="calc.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestRecRed" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="calc.test.TestRecRed" />
+      <module name="CCalcInfixe" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="calc.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.TestGreenPlus" />
+        <item itemvalue="Application.TestGreenError" />
+        <item itemvalue="Application.TestError" />
+        <item itemvalue="Application.TestBlue" />
+        <item itemvalue="Application.TestRecRed" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a30063a1-4120-443e-be18-a5e5f42fd43b" name="Default Changelist" comment="" />
+      <created>1580377150805</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1580377150805</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="681" y="324" width="566" height="390" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1580422411073">
+      <screen x="67" y="27" width="1853" height="948" />
+    </state>
+    <state x="681" y="357" width="614" height="390" key="#com.intellij.fileTypes.FileTypeChooser/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1580394428547" />
+    <state x="681" y="324" width="566" height="390" key="#com.intellij.fileTypes.FileTypeChooser/67.27.1853.948/1920.0.1920.1080@67.27.1853.948" timestamp="1580422411073" />
+    <state x="801" y="212" width="374" height="575" key="#com.intellij.ide.util.MemberChooser" timestamp="1580400489920">
+      <screen x="67" y="27" width="1853" height="948" />
+    </state>
+    <state x="801" y="212" width="374" height="575" key="#com.intellij.ide.util.MemberChooser/67.27.1853.948/1920.0.1920.1080@67.27.1853.948" timestamp="1580400489920" />
+    <state x="771" y="310" width="424" height="484" key="FileChooserDialogImpl" timestamp="1580378523516">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state x="771" y="310" width="424" height="484" key="FileChooserDialogImpl/67.27.1853.1053@67.27.1853.1053" timestamp="1580378523516" />
+    <state width="1807" height="316" key="GridCell.Tab.0.bottom" timestamp="1580422423478">
+      <screen x="67" y="27" width="1853" height="948" />
+    </state>
+    <state width="1807" height="316" key="GridCell.Tab.0.bottom/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1580418746369" />
+    <state width="1807" height="236" key="GridCell.Tab.0.bottom/67.27.1853.923@67.27.1853.923" timestamp="1580381595200" />
+    <state width="1807" height="316" key="GridCell.Tab.0.bottom/67.27.1853.948/1920.0.1920.1080@67.27.1853.948" timestamp="1580422423478" />
+    <state width="1807" height="316" key="GridCell.Tab.0.center" timestamp="1580422423477">
+      <screen x="67" y="27" width="1853" height="948" />
+    </state>
+    <state width="1807" height="316" key="GridCell.Tab.0.center/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1580418746369" />
+    <state width="1807" height="236" key="GridCell.Tab.0.center/67.27.1853.923@67.27.1853.923" timestamp="1580381595199" />
+    <state width="1807" height="316" key="GridCell.Tab.0.center/67.27.1853.948/1920.0.1920.1080@67.27.1853.948" timestamp="1580422423477" />
+    <state width="1807" height="316" key="GridCell.Tab.0.left" timestamp="1580422423477">
+      <screen x="67" y="27" width="1853" height="948" />
+    </state>
+    <state width="1807" height="316" key="GridCell.Tab.0.left/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1580418746369" />
+    <state width="1807" height="236" key="GridCell.Tab.0.left/67.27.1853.923@67.27.1853.923" timestamp="1580381595199" />
+    <state width="1807" height="316" key="GridCell.Tab.0.left/67.27.1853.948/1920.0.1920.1080@67.27.1853.948" timestamp="1580422423477" />
+    <state width="1807" height="316" key="GridCell.Tab.0.right" timestamp="1580422423477">
+      <screen x="67" y="27" width="1853" height="948" />
+    </state>
+    <state width="1807" height="316" key="GridCell.Tab.0.right/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1580418746369" />
+    <state width="1807" height="236" key="GridCell.Tab.0.right/67.27.1853.923@67.27.1853.923" timestamp="1580381595200" />
+    <state width="1807" height="316" key="GridCell.Tab.0.right/67.27.1853.948/1920.0.1920.1080@67.27.1853.948" timestamp="1580422423477" />
+    <state x="1120" y="221" key="run.anything.popup" timestamp="1580380903167">
+      <screen x="67" y="27" width="1853" height="923" />
+    </state>
+    <state x="1120" y="221" key="run.anything.popup/67.27.1853.923@67.27.1853.923" timestamp="1580380903167" />
+  </component>
+</project>
